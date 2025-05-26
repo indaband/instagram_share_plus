@@ -22,7 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+    namespace 'com.milanciganovic.instagram_share_plus'
 
     defaultConfig {
         minSdkVersion 16
